@@ -3,6 +3,20 @@
     src: url('../fonts/After_Night.ttf');
 }
 
+/*yoan*/
+/*Menu all */
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+      color: #d73351;
+      border: 1.5px solid #d73351;
+    }
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-nav{
+    /* width: 20%; */
+    text-align: center;
+}
+
 @media screen and (max-width:767px) {
     .bg1{
         background-color: white;  
@@ -54,6 +68,38 @@
 
         background-color: #d73351;
     }
+    /*Menu*/
+    .navbar-nav{
+        width: 100px;
+        text-align: center;
+    }
+    .container{
+        padding: 0;
+    }
+    .burger{
+      width: 100%;
+      height: auto;
+    }
+    .navbar-light .navbar-toggler-icon{
+        background-image: none;
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .navbar-light .navbar-toggler{
+        margin-right: 30px;
+    }
+    .logo{
+        /* width: 100px; */
+        /* height: 50px; */
+    }
+    /*parti NICOLAS*/
     .contact {
         background-image: url("../media/background-contact.png");
         height: 695px;
@@ -209,6 +255,22 @@
         margin-bottom:77px;
     }
 
+    /*Menu*/
+    .navbar-light .navbar-toggler{
+        border: none;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+    .navbar{
+        padding: 0;
+    }
+       /*.navbar-light .navbar-toggler{
+        margin-right: 30px;
+    }*/
+
+
+    /*NICOLAS*/
     .bg2 {
         background-color: #d73351;
         height: 220px;
