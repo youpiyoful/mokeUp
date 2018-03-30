@@ -12,48 +12,55 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light">
-            <img src="logo.svg" class="navbar-brand col-2 offset-1 logo col-md-2" href="#">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <img src="asset/media/burger.png" class="burger">
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Engagement
-                        <span class="sr-only">(current)</span>
-                    </a>
-                    <a class="nav-item nav-link" href="#">Produit</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <img src="logo.svg" class="navbar-brand col-2 logo col-md-2 col-lg-2" href="#">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+                        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Engagement
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-item nav-link" href="#">Produit</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid bg">
+        <div class="container text">
+            <h1>Mock Up</h1>
+        </div>
+        <div class="container text">
+            <h2 class="subt">When you’re fed up, Take a Mock Up</h2>
+        </div>
     </div>
     <div class="container-fluid bg1">
         <div class="container">
             <h2 class="subtitle">Engagement</h2>
-            <p class="par">Parce que votre santé passe avant tout</p>
-            <div class="row">
-                <figure class="">
-                    <img class="imgart1" src="asset/media/article-1.png" alt="">
-                    <figcaption class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam, architecto laborum facere
-                        impedit illo modi dicta tenetur odit expedita rerum ducimus reprehenderit recusandae odio nemo quos.
-                        Nulla, molestias eaque.</figcaption>
+            <p class="parit">Parce que votre santé passe avant tout</p>
+            <div class="row presentation align-items-center no-gutters">
+                <figure class="col-xl-2 offset-xl-2 ">
+                    <img class="imgart" src="asset/media/article-1.png" alt="">
+                    <figcaption class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nunc tempor non diam eu sclerisque.</figcaption>
                 </figure>
-                <figure class="">
-                    <img class="imgart2" src="asset/media/article-2.png" alt="">
-                    <figcaption class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam, architecto laborum facere
-                        impedit illo modi dicta tenetur odit expedita rerum ducimus reprehenderit recusandae odio nemo quos.
-                        Nulla, molestias eaque.
+                <figure class="col-xl-2 offset-xl-1">
+                    <img class="imgart" src="asset/media/article-2.png" alt="">
+                    <figcaption class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nunc tempor non diam eu sclerisque.
                     </figcaption>
-                    <figure class="">
-                        <img class="imgart2" src="asset/media/article-3.png" alt="">
-                        <figcaption class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam, architecto laborum facere
-                            impedit illo modi dicta tenetur odit expedita rerum ducimus reprehenderit recusandae odio nemo
-                            quos. Nulla, molestias eaque.
-                        </figcaption>
-                    </figure>
+                </figure>
+                <figure class="col-xl-2 offset-xl-1">
+                    <img class="imgart" src="asset/media/article-3.png" alt="">
+                    <figcaption class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nunc tempor non diam eu sclerisque.
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
@@ -88,53 +95,50 @@
         </div>
     </div>
     <div class="container-fluid contact">
-        <h2 class="subtitle">Contactez-nous</h2>
+        <h2 class="subtitle1">Contactez-nous</h2>
         <div class="container bgcontact">
             <form>
-                <div class="form-group row">
+                <div class="form-group row no-gutters">
                     <label for="name" class="name"></label>
                     <div class="col-md-6 col-xl-6 col-lg-6">
                         <input type="name" class="form-control-plaintext" id="exampleFormControlInput1" placeholder="Entrez votre nom">
                         <hr>
                     </div>
-
-
                     <label for="Email" class="email"></label>
                     <div class="col-md-6 col-xl-6 col-lg-6">
                         <input type="email" class="form-control-plaintext" id="exampleFormControlInput2" placeholder="Entrez votre email">
                         <hr>
                     </div>
-
-                </div>
-                <label for="Message" class="message"></label>
-                <div class="col-10">
-                    <textarea class="form-control-plaintext" id="" placeholder="Votre message"></textarea>
-                </div>
-                <hr>
-                <div class="row justify-content-center">
-                    <button type="submit" class="btn">Envoyer</button>
-                </div>
-            </form>            
-                </div>
-            </div>
-            <div class="container-fluid bg2">
-                <div class="row">
-                    <div class="socialnet col">
-                        <img src="asset/media/logo-facebook.png" class="facebook">
-                        <img src="asset/media/logo-instagram.png" class="instagram">
-                        <img src="asset/media/logo-twitter.png" class="twitter">
-                        <img src="asset/media/logo-google.png" class="google">
+                    <label for="Message" class="message"></label>
+                    <div class="">
+                        <textarea class="form-control-plaintext" id="" placeholder="Votre message"></textarea>
                     </div>
                 </div>
-                <p>Mentions légales</p>
-                <p>@ Copyright Groupe-2</p>
+                <hr>
+                <div class="row justify-content-center no-gutters">
+                    <button type="submit" class="btn">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid bg2">
+        <div class="row no-gutters">
+            <div class="socialnet col">
+                <img src="asset/media/logo-facebook.png" class="facebook">
+                <img src="asset/media/logo-instagram.png" class="instagram">
+                <img src="asset/media/logo-twitter.png" class="twitter">
+                <img src="asset/media/logo-google.png" class="google">
             </div>
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
+        </div>
+        <p>Mentions légales</p>
+        <p>@ Copyright Groupe-2</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

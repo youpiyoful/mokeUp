@@ -1,111 +1,211 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
 @font-face {
     font-family: "AfterNight";
     src: url('../fonts/After_Night.ttf');
 }
 
 /*yoan*/
+
 /*Menu all */
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-      color: #d73351;
-      border: 1.5px solid #d73351;
-    }
-.navbar-collapse{
+
+.nav-item:first-child, .nav-item:nth-child(2){
+    /*margin-right: 2em;*/
+    display: flex;
+    justify-content: space-around;
+}
+.nav-item{
+    font-family: "AfterNight";
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #d73351;
+    border: 1.5px solid #d73351;
+}
+
+.navbar-collapse {
     justify-content: flex-end;
 }
-.navbar-nav{
+
+.navbar-nav {
     /* width: 20%; */
     text-align: center;
 }
 
-@media screen and (max-width:767px) {
-    .bg1{
-        background-color: white;  
-        height: 600px;      
-    }
-    .par{
-    color: black;
+.bg {
+    background-image: url("../media/background-header.png");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.imgart1{
-   text-align: center;
+
+.contact {
+    background-image: url("../media/background-contact.png");
+    height: 695px;
+    background-size: auto;
 }
-    .slider{
-        background-color: #2c2c2c;       
+
+@media screen and (max-width:575px) {
+    /*Menu*/
+    .navbar-nav {
+        width: 100px;
+        text-align: center;
     }
-    .slide1{
-        width: 50%;
-        height: 50%;
+    .container {
+        padding: 0;
     }
-    .slide2{
-        width: 50%;
-        height: 50%;
+    .burger {
+        width: 100%;
+        height: auto;
     }
-    .imgbarre{
-    text-align: center;
-    padding: 10%;
+    .navbar-light .navbar-toggler {
+        border: none;
+        color: #d73351; 
     }
-    .carousel-control-prev-icon{
+    .navbar-brand {
+        padding: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        /* width: 100px; */
+        /* height: 50px; */
+    }
+    /*parti NICOLAS*/
+    .bg {
+        background-size: cover;
+        position: relative;
+        height: 154px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 {
+        font-family: "AfterNight";
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 5px 80px 5px 80px;
+    }
+    .subt {
+        font-family: "AfterNight";
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 5px 40px 5px 40px;
+    }
+    .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .bg1 {
+        background-color: white;
+        height: 810px;
+    }
+    .presentation {
+        display: flex;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .imgart {
+        width: 104px;
+        height: 104px;
+    }
+    .parit {
+        text-align: center;
+        color: black;
+        font-size: 13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+    .par {
+        text-align: center;
+        color: black;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .slider {
+        background-color: #2c2c2c;
+    }
+    .slide1 {
+        width: 70%;
+        height: 70%;
+        padding-bottom: 20px;
+    }
+    .slide2 {
+        width: 70%;
+        height: 70%;
+        padding-bottom: 20px;
+    }
+    .imgbarre {
+        text-align: center;
+        padding: 10%;
+    }
+    .carousel-control-prev {
+        margin-bottom: 35px;
+    }
+    .carousel-control-prev-icon {
         content: "";
         background-image: url("../media/fleche-gauche.png");
-       
     }
-    .carousel-control-next-icon{
+    .carousel-control-next {
+        margin-bottom: 35px;
+    }
+    .carousel-control-next-icon {
         content: "";
         background-image: url("../media/fleche-droite.png");
     }
-    .carousel-indicators li:before{
+    .carousel-indicators li:before {
         content: "";
         background-image: url("../media/rond1.png");
     }
     .carousel-indicators li {
         cursor: pointer;
-        width : 15px;
-        height : 15px;
-        border-radius : 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
         background-color: #2c2c2c;
-        border : 1px solid #d73351;  
+        border: 1px solid #d73351;
     }
     .carousel-indicators .active {
-
         background-color: #d73351;
     }
-    /*Menu*/
-    .navbar-nav{
-        width: 100px;
-        text-align: center;
-    }
-    .container{
-        padding: 0;
-    }
-    .burger{
-      width: 100%;
-      height: auto;
-    }
-    .navbar-light .navbar-toggler-icon{
-        background-image: none;
-    }
-    .navbar-light .navbar-toggler{
-        border: none;
-    }
-    .navbar-brand{
-        padding: 0;
-    }
-    .navbar{
-        padding: 0;
-    }
-    .navbar-light .navbar-toggler{
-        margin-right: 30px;
-    }
-    .logo{
-        /* width: 100px; */
-        /* height: 50px; */
-    }
-    /*parti NICOLAS*/
     .contact {
-        background-image: url("../media/background-contact.png");
-        height: 695px;
-        width: 100%;
+        background-size: cover;
+        background-position: right bottom;
     }
     .subtitle {
+        font-family: "AfterNight";
+        color: #d73351;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .subtitle1 {
         font-family: "AfterNight";
         color: #d73351;
         text-align: center;
@@ -114,37 +214,263 @@
     }
     .bgcontact {
         width: 100%;
-        height: 80%;
+        height: 577px;
         background-color: rgba(255, 255, 255, 0.7);
         margin-top: 20px;
     }
-    hr{ 
-        background-color:  #d73351;
+    hr {
+        background-color: #d73351;
         margin-left: 15px;
         margin-right: 15px;
     }
-
-    }
-    
     input:placeholder-shown {
         color: black;
     }
     input.form-control-plaintext {
-        width: 100%;
+        width: 90%;
         margin-top: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
     textarea.form-control-plaintext {
-        width: 125%;
+        width: 90%;
         height: 100px;
         margin-top: 40px;
+        margin-left: 29px;
+        margin-right: 62px;
     }
-    .btn{
+    .btn {
         background-color: #d73351;
         text-transform: uppercase;
         font-size: 19px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
         margin-top: 48px;
+        border-radius: 20px
+    }
+    .bg2 {
+        background-color: #d73351;
+        height: 220px;
+    }
+    .socialnet {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 27px;
+        margin-bottom: 46px;
+    }
+    .facebook {
+        width: 52px;
+        height: 52px;
+    }
+    .instagram {
+        width: 52px;
+        height: 52px;
+    }
+    .twitter {
+        width: 52px;
+        height: 52px;
+    }
+    .google {
+        width: 52px;
+        height: 52px;
+    }
+    p {
+        color: white;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px)and (max-width:767px) {
+    /*Menu*/
+    .navbar-nav {
+        width: 100px;
+        text-align: center;
+    }
+    .container {
+        padding: 0;
+    }
+    .burger {
+        width: 100%;
+        height: auto;
+    }
+    .navbar-light .navbar-toggler {
+        border: none;
+        color: #d73351; 
+    }
+    .navbar-brand {
+        padding: 0;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .logo {
+        /* width: 100px; */
+        /* height: 50px; */
+    }
+    /*parti NICOLAS*/
+    .bg {
+        background-size: cover;
+        height: 154px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 {
+        font-family: "AfterNight";
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+    }
+    .subt {
+        font-family: "AfterNight";
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+    }
+     .bg1 {
+        background-color: white;
+        height: 810px;
+    }
+    .presentation {
+        display: flex;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .imgart {
+        width: 104px;
+        height: 104px;
+    }
+    .parit {
+        text-align: center;
+        color: black;
+        font-size: 13px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        margin-bottom: 50px;
+    }
+    .par {
+        text-align: center;
+        color: black;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .slider {
+        background-color: #2c2c2c;
+    }
+    .slide1 {
+        width: 70%;
+        height: 70%;
+        padding-bottom: 20px;
+    }
+    .slide2 {
+        width: 70%;
+        height: 70%;
+        padding-bottom: 20px;
+    }
+    .imgbarre {
+        text-align: center;
+        padding: 10%;
+    }
+    .carousel-control-prev {
+        margin-bottom: 35px;
+    }
+    .carousel-control-prev-icon {
+        content: "";
+        background-image: url("../media/fleche-gauche.png");
+    }
+    .carousel-control-next {
+        margin-bottom: 35px;
+    }
+    .carousel-control-next-icon {
+        content: "";
+        background-image: url("../media/fleche-droite.png");
+    }
+    .carousel-indicators li:before {
+        content: "";
+        background-image: url("../media/rond1.png");
+    }
+    .carousel-indicators li {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #2c2c2c;
+        border: 1px solid #d73351;
+    }
+    .carousel-indicators .active {
+        background-color: #d73351;
+    }
+    .contact {
+        background-size: cover;
+        background-position: right bottom;
+    }
+    .subtitle {
+        font-family: "AfterNight";
+        color: #d73351;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .subtitle1 {
+        font-family: "AfterNight";
+        color: #d73351;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 18px;
+    }
+    .bgcontact {
+        width: 100%;
+        height: 577px;
+        background-color: rgba(255, 255, 255, 0.7);
+        margin-top: 20px;
+    }
+    hr {
+        background-color: #d73351;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    input:placeholder-shown {
+        color: black;
+    }
+    input.form-control-plaintext {
+        width: 90%;
+        margin-top: 40px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    textarea.form-control-plaintext {
+        width: 90%;
+        height: 100px;
+        margin-top: 40px;
+        margin-left: 29px;
+        margin-right: 62px;
+    }
+    .btn {
+        background-color: #d73351;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        margin-top: 48px;
+        border-radius: 20px
     }
     .bg2 {
         background-color: #d73351;
@@ -181,159 +507,96 @@
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
-    
-    .slider{
-        background-color: #2c2c2c;       
-    }
-    .slide1{
-        width: 50%;
-        height: 50%;
-    }
-    .slide2{
-        width: 50%;
-        height: 50%;
-    }
-    .imgbarre{
-    text-align: center;
-    padding: 10%;
-    }
-    .carousel-control-prev-icon{
-        content: "";
-        background-image: url("../media/fleche-gauche.png");
-    }
-    .carousel-control-next-icon{
-        content: "";
-        background-image: url("../media/fleche-droite.png");
-    }
-    .carousel-indicators li {
-        cursor: pointer;
-        width : 15px;
-        height : 15px;
-        border-radius : 50%;
-        background-color: #2c2c2c;
-        border : 1px solid #d73351;  
-    }
-    .carousel-indicators .active {
-
-        background-color: #d73351;
-    }
-    .contact {
-        background-image: url("../media/background-contact.png");
-        height: 695px;
-        width: 100%;
-    }
-    .subtitle {
-        font-family: "AfterNight";
-        color: #d73351;
-        text-align: center;
-        padding-top: 50px;
-        font-size: 24px;        
-        padding-bottom:30px;
-    }
-    .bgcontact {
-         background-color: rgba(255, 255, 255, 0.7);       
-    }
-    input:placeholder-shown {
-        color: black;
-    }
-    input.form-control-plaintext {
-        width: 100%;
-        margin-top: 30px;
-    }
-    textarea.form-control-plaintext {
-        width: 125%;
-        height: 100px;
-        margin-top: 90px;
-    }
-    hr{ 
-        background-color:  #d73351;
-    }
-    
-    .btn{
-        background-color: #d73351;
-        text-transform: uppercase;
-        font-size: 19px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        margin-top: 90px;
-        margin-bottom:77px;
-    }
-
     /*Menu*/
-    .navbar-light .navbar-toggler{
+    .navbar-light .navbar-toggler {
         border: none;
     }
-    .navbar-brand{
+    .navbar-brand {
         padding: 0;
     }
-    .navbar{
+    .navbar {
         padding: 0;
     }
-       /*.navbar-light .navbar-toggler{
+    /*.navbar-light .navbar-toggler{
         margin-right: 30px;
     }*/
-
-
     /*NICOLAS*/
-    .bg2 {
-        background-color: #d73351;
-        height: 220px;
-    }
-    .socialnet {
+    .bg {
+        background-size: cover;
+        height: 200px;
         display: flex;
-        justify-content: center;
-        margin-top: 27px;
-        margin-bottom: 46px;
+        flex-direction: column;
     }
-    .facebook {
-        margin-right: 30px;
+    .text {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
     }
-    .twitter {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    p {
+    h1 {
+        font-family: "AfterNight";
+        font-size: 40px;
         color: white;
-        font-size: 14px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+    }
+    .subt {
+        font-family: "AfterNight";
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+    }
+    .presentation {
+        display: flex;
         text-align: center;
     }
-
-}
-@media screen and (min-width:991px) and (max-width:1199px) {
-    .slider{
-        background-color: #2c2c2c;       
+    .par {
+        text-align: center;
+        color: black;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 30px;
     }
-    .slide1{
+    .slider {
+        background-color: #2c2c2c;
+    }
+    .slide1 {
         width: 50%;
         height: 50%;
     }
-    .slide2{
+    .slide2 {
         width: 50%;
         height: 50%;
     }
-    .imgbarre{
-    text-align: center;
-    padding: 10%;
+    .imgbarre {
+        text-align: center;
+        padding: 10%;
     }
-    .carousel-control-prev-icon{
+    .carousel-control-prev-icon {
         content: "";
         background-image: url("../media/fleche-gauche.png");
     }
-    .carousel-control-next-icon{
+    .carousel-control-next-icon {
         content: "";
         background-image: url("../media/fleche-droite.png");
     }
     .carousel-indicators li {
         cursor: pointer;
-        width : 15px;
-        height : 15px;
-        border-radius : 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
         background-color: #2c2c2c;
-        border : 1px solid #d73351;  
+        border: 1px solid #d73351;
     }
     .carousel-indicators .active {
-
         background-color: #d73351;
     }
     .contact {
@@ -346,121 +609,331 @@
         color: #d73351;
         text-align: center;
         padding-top: 50px;
-        font-size: 24px;        
-        height:200px;
+        font-size: 24px;
+        padding-bottom: 30px;
     }
-    .bgcontact {
-             background-color: rgba(255, 255, 255, 0.7);        
-             padding-bottom: 15px;       
-    }
-    input:placeholder-shown {
-        color: black;
-    }
-    input.form-control-plaintext {
-        width: 100%;
-        margin-top: 30px;
-    }
-    textarea.form-control-plaintext {
-        width: 125%;
-        height: 100px;
-        margin-top: 90px;
-    }
-    hr{ 
-        background-color:  #d73351;
-    }
-    
-    .btn{
-        background-color: #d73351;
-        text-transform: uppercase;
-        font-size: 19px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: white;
-        margin-top: 90px;
-        margin-bottom:77px;
-    }
-
-    .bg2 {
-        background-color: #d73351;
-        height: 220px;
-    }
-    .socialnet {
-        display: flex;
-        justify-content: center;
-        margin-top: 27px;
-        margin-bottom: 46px;
-    }
-    .facebook {
-        margin-right: 30px;
-    }
-    .twitter {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-    p {
-        color: white;
-        font-size: 14px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        text-align: center;
-    }
-
-}
-@media screen and (min-width:1200px){
-    .slider{
-        background-color: #2c2c2c;
-    }
-    .slide1{
-        width: 30%;
-        height: 30%;
-        padding-bottom: 50px;
-    }
-    .slide2{
-        width: 30%;
-        height: 30%;
-        padding-bottom: 50px;       
-    }
-    .carousel-control-prev{
-        margin-bottom: 70px;
-    }
-    .carousel-control-prev-icon{
-        content: "";
-        background-image: url("../media/fleche-gauche.png");  
-        background-size: 200%;  
-    }
-    .carousel-control-next{
-        margin-bottom: 70px;
-    }
-    .carousel-control-next-icon{
-        content: "";
-        background-image: url("../media/fleche-droite.png");
-        background-size: 200%;      
-    } 
-    .carousel-indicators li {
-        cursor: pointer;
-        width : 15px;
-        height : 15px;
-        border-radius : 50%;
-        background-color: #2c2c2c;
-        border : 1px solid #d73351;  
-    }
-    .carousel-indicators .active {
-
-        background-color: #d73351;
-    }
-    .contact {
-        background-image: url("../media/background-contact.png");
-        padding-bottom: 100px;
-    }
-        .subtitle {
+    .subtitle1 {
         font-family: "AfterNight";
         color: #d73351;
-        text-align: center;      
-        font-size: 30px;        
-        height:130px;
-        padding-top: 50px;
-     
+        text-align: center;
+        padding-top: 30px;
+        font-size: 18px;
     }
     .bgcontact {
         background-color: rgba(255, 255, 255, 0.7);
+    }
+    input:placeholder-shown {
+        color: black;
+    }
+    input.form-control-plaintext {
+        width: 100%;
+        margin-top: 30px;
+    }
+    textarea.form-control-plaintext {
+        width: 125%;
+        height: 100px;
+        margin-top: 90px;
+    }
+    hr {
+        background-color: #d73351;
+    }
+    .btn {
+        background-color: #d73351;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        margin-top: 90px;
+        margin-bottom: 77px;
+        border-radius: 20px
+    }
+    .bg2 {
+        background-color: #d73351;
+        height: 220px;
+    }
+    .socialnet {
+        display: flex;
+        justify-content: center;
+        margin-top: 27px;
+        margin-bottom: 46px;
+    }
+    .facebook {
+        margin-right: 30px;
+    }
+    .twitter {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    p {
+        color: white;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .bg {
+        height: 254px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 {
+        font-family: "AfterNight";
+        font-size: 75px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+    }
+    .subt {
+        font-family: "AfterNight";
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+    }
+    .presentation {
+        display: flex;
+        text-align: center;
+    }
+    .par {
+        text-align: center;
+        color: black;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 30px;
+    }
+    .slider {
+        background-color: #2c2c2c;
+    }
+    .slide1 {
+        width: 50%;
+        height: 50%;
+    }
+    .slide2 {
+        width: 50%;
+        height: 50%;
+    }
+    .imgbarre {
+        text-align: center;
+        padding: 10%;
+    }
+    .carousel-control-prev-icon {
+        content: "";
+        background-image: url("../media/fleche-gauche.png");
+    }
+    .carousel-control-next-icon {
+        content: "";
+        background-image: url("../media/fleche-droite.png");
+    }
+    .carousel-indicators li {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #2c2c2c;
+        border: 1px solid #d73351;
+    }
+    .carousel-indicators .active {
+        background-color: #d73351;
+    }
+    .contact {
+        background-image: url("../media/background-contact.png");
+        height: 695px;
+        width: 100%;
+    }
+    .subtitle {
+        font-family: "AfterNight";
+        color: #d73351;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 24px;
+        height: 200px;
+    }
+    .subtitle1 {
+        font-family: "AfterNight";
+        color: #d73351;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 18px;
+    }
+    .bgcontact {
+        background-color: rgba(255, 255, 255, 0.7);
+        padding-bottom: 15px;
+    }
+    input:placeholder-shown {
+        color: black;
+    }
+    input.form-control-plaintext {
+        width: 100%;
+        margin-top: 30px;
+    }
+    textarea.form-control-plaintext {
+        width: 125%;
+        height: 100px;
+        margin-top: 90px;
+    }
+    hr {
+        background-color: #d73351;
+    }
+    .btn {
+        background-color: #d73351;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: white;
+        margin-top: 90px;
+        margin-bottom: 77px;
+        border-radius: 20px
+    }
+    .bg2 {
+        background-color: #d73351;
+        height: 220px;
+    }
+    .socialnet {
+        display: flex;
+        justify-content: center;
+        margin-top: 27px;
+        margin-bottom: 46px;
+    }
+    .facebook {
+        margin-right: 30px;
+    }
+    .twitter {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    p {
+        color: white;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .bg {
+        height: 559px;
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 {
+        font-family: "AfterNight";
+        font-size: 75px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+    }
+    .subt {
+        font-family: "AfterNight";
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: inline-block;
+        padding: 10px 50px 10px 50px;
+    }
+    .presentation {
+        display: flex;
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
+    .par {
+        text-align: center;
+        color: black;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-bottom: 30px;
+    }
+    .slider {
+        background-color: #2c2c2c;
+    }
+    .slide1 {
+        width: 50%;
+        height: 50%;
+        padding-bottom: 50px;
+    }
+    .slide2 {
+        width: 50%;
+        height: 50%;
+        padding-bottom: 50px;
+    }
+    .carousel-control-prev {
+        margin-bottom: 70px;
+    }
+    .carousel-control-prev-icon {
+        content: "";
+        background-image: url("../media/fleche-gauche.png");
+        background-size: 200%;
+    }
+    .carousel-control-next {
+        margin-bottom: 70px;
+    }
+    .carousel-control-next-icon {
+        content: "";
+        background-image: url("../media/fleche-droite.png");
+        background-size: 200%;
+    }
+    .carousel-indicators li {
+        cursor: pointer;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #2c2c2c;
+        border: 1px solid #d73351;
+    }
+    .carousel-indicators .active {
+        background-color: #d73351;
+    }
+    .contact {
+        background-image: url("../media/background-contact.png");
+        height: 995px;
+    }
+    .subtitle {
+        font-family: "AfterNight";
+        color: #d73351;
+        text-align: center;
+        font-size: 30px;
+        height: 100px;
+        padding-top: 50px;
+    }
+    .subtitle1 {
+        font-family: "AfterNight";
+        color: #d73351;
+        text-align: center;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        font-size: 30px;
+    }
+    .bgcontact {
+        background-color: rgba(255, 255, 255, 0.7);
+        height: 610px;
+        width: 971px;
     }
     input:placeholder-shown {
         color: black;
@@ -470,7 +943,6 @@
         margin-top: 80px;
         margin-left: 150px;
         margin-right: 150px;
-  
     }
     textarea.form-control-plaintext {
         width: 90%;
@@ -478,24 +950,22 @@
         margin-top: 90px;
         margin-left: 150px;
         margin-right: 150px;
-
     }
-    hr{ 
-        background-color:  #d73351;
+    hr {
+        background-color: #d73351;
         margin-left: 150px;
         margin-right: 150px;
     }
-        
-    .btn{
+    .btn {
         background-color: #d73351;
         text-transform: uppercase;
         font-size: 19px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color: white;
         margin-top: 90px;
-        margin-bottom:77px;
+        margin-bottom: 77px;
+        border-radius: 20px
     }
-
     .bg2 {
         background-color: #d73351;
         height: 220px;
@@ -519,5 +989,4 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-align: center;
     }
-
 }
