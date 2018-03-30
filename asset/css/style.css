@@ -84,7 +84,7 @@ html {
     .bg {
         background-size: cover;
         position: relative;
-        height: 154px;
+        height: 254px;
         display: flex;
         flex-direction: column;
     }
@@ -107,7 +107,7 @@ html {
     }
     .subt {
         font-family: "AfterNight";
-        font-size: 16px;
+        font-size: 18px;
         color: white;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.26);
@@ -137,7 +137,7 @@ html {
     .parit {
         text-align: center;
         color: black;
-        font-size: 13px;
+        font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-style: italic;
         margin-bottom: 50px;
@@ -204,15 +204,15 @@ html {
         font-family: "AfterNight";
         color: #d73351;
         text-align: center;
-        padding-top: 10px;
-        font-size: 18px;
+        padding-top: 30px;
+        font-size: 23px;
     }
     .subtitle1 {
         font-family: "AfterNight";
         color: #d73351;
         text-align: center;
         padding-top: 30px;
-        font-size: 18px;
+        font-size: 23px;
     }
     .bgcontact {
         width: 100%;
