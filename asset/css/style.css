@@ -2,18 +2,21 @@
     font-family: "AfterNight";
     src: url('../fonts/After_Night.ttf');
 }
-
 /*yoan*/
 
 /*Menu all */
 
 .nav-item:first-child, .nav-item:nth-child(2){
-    /*margin-right: 2em;*/
+    /* margin-right: 2em; */
     display: flex;
     justify-content: space-around;
+    font-size: 22px;
+    margin: 0.8em;
 }
 .nav-item{
     font-family: "AfterNight";
+    margin: 0.8em;
+    font-size: 22px;
 }
 
 .navbar-light .navbar-nav .active>.nav-link,
@@ -21,7 +24,9 @@
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
     color: #d73351;
+    font-size: 22px;
     border: 1.5px solid #d73351;
+    margin: 0.8em;
 }
 
 .navbar-collapse {
@@ -62,7 +67,7 @@
     }
     .navbar-light .navbar-toggler {
         border: none;
-        color: #d73351; 
+        color: #d73351;
     }
     .navbar-brand {
         padding: 0;
@@ -126,7 +131,7 @@
         text-align: center;
         margin-top: 40px;
     }
-    .imgart {
+    .imgArt {
         width: 104px;
         height: 104px;
     }
@@ -143,8 +148,9 @@
         color: black;
         font-size: 14px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin: 15px 5px 30px 5px
+        margin: 15px 5px 30px 5px;
     }
+
     .slider {
         background-color: #2c2c2c;
     }
@@ -294,7 +300,7 @@
     }
     .navbar-light .navbar-toggler {
         border: none;
-        color: #d73351; 
+        color: #d73351;
     }
     .navbar-brand {
         padding: 0;
@@ -349,7 +355,7 @@
         text-align: center;
         margin-top: 40px;
     }
-    .imgart {
+    .imgArt {
         width: 104px;
         height: 104px;
     }
@@ -531,7 +537,7 @@
     }
     h1 {
         font-family: "AfterNight";
-        font-size: 60px;
+        font-size: 50px;
         color: white;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.26);
@@ -543,7 +549,11 @@
     }
     .subt {
         font-family: "AfterNight";
+<<<<<<< HEAD
         font-size: 22px;
+=======
+        font-size: 25px;
+>>>>>>> 2c3d7c2a1854569674ad01053566ea35c8c15511
         color: white;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.26);
@@ -560,18 +570,18 @@
     .parit {
         text-align: center;
         color: black;
-        font-size: 13px;
+        font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-style: italic;
         margin-bottom: 50px;
     }
-    .imgart{
+    .imgArt{
         width: 70%;
     }
     .par {
         text-align: center;
         color: black;
-        font-size: 14px;
+        font-size: 18px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-bottom: 30px;
         margin-top: 30px;
@@ -620,14 +630,14 @@
         color: #d73351;
         text-align: center;
         padding-top: 50px;
-        font-size: 24px;        
+        font-size: 38px;
     }
     .subtitle1 {
         font-family: "AfterNight";
         color: #d73351;
         text-align: center;
         padding-top: 30px;
-        font-size: 18px;
+        font-size: 33px;
     }
     .bgcontact {
         background-color: rgba(255, 255, 255, 0.7);
@@ -728,7 +738,7 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    .imgart{
+    .imgArt{
         width: 50%;
         height: 50%;
     }
@@ -737,9 +747,9 @@
         color: black;
         font-size: 14px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin-bottom: 30px;        
+        margin-bottom: 30px;
     }
-    
+
     .slider {
         background-color: #2c2c2c;
     }
@@ -899,6 +909,15 @@
         font-size: 14px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin-bottom: 30px;
+        margin-top:  20px;
+    }
+        .parit {
+        text-align: center;
+        color: black;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        margin-bottom: 50px;
     }
     .slider {
         background-color: #2c2c2c;
@@ -948,9 +967,10 @@
         font-family: "AfterNight";
         color: #d73351;
         text-align: center;
-        font-size: 30px;
+        font-size: 45px;
         height: 100px;
         padding-top: 50px;
+        margin-bottom: 30px;
     }
     .subtitle1 {
         font-family: "AfterNight";
@@ -958,7 +978,7 @@
         text-align: center;
         padding-top: 80px;
         padding-bottom: 80px;
-        font-size: 30px;
+        font-size: 45px;
     }
     .bgcontact {
         background-color: rgba(255, 255, 255, 0.7);
