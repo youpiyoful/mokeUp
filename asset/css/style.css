@@ -103,6 +103,7 @@ html {
         padding-bottom: 5px;
         display: inline-block;
         padding: 5px 80px 5px 80px;
+        width: 100%;
     }
     .subt {
         font-family: "AfterNight";
@@ -114,6 +115,7 @@ html {
         padding-bottom: 5px;
         display: inline-block;
         padding: 5px 40px 5px 40px;
+        width: 100%;
     }
     .container-fluid {
         padding-left: 0;
