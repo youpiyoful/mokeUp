@@ -89,7 +89,7 @@ html {
     .bg {
         background-size: cover;
         position: relative;
-        height: 154px;
+        height: 254px;
         display: flex;
         flex-direction: column;
     }
@@ -109,10 +109,11 @@ html {
         display: inline-block;
         padding: 5px 80px 5px 80px;
         width: 100%;
+        margin-top: 70px;
     }
     .subt {
         font-family: "AfterNight";
-        font-size: 16px;
+        font-size: 18px;
         color: white;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.26);
@@ -121,6 +122,7 @@ html {
         display: inline-block;
         padding: 5px 40px 5px 40px;
         width: 100%;
+        margin-bottom: 70px;
     }
     .container-fluid {
         padding-left: 0;
@@ -142,7 +144,7 @@ html {
     .parit {
         text-align: center;
         color: black;
-        font-size: 12px;
+        font-size: 15px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-style: italic;
         margin-bottom: 50px;
@@ -154,6 +156,7 @@ html {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         margin: 15px 5px 30px 5px;
     }
+
     .slider {
         background-color: #2c2c2c;
     }
@@ -208,7 +211,7 @@ html {
         font-family: "AfterNight";
         color: #d73351;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 30px;
         font-size: 30px;
     }
     .subtitle1 {
