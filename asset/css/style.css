@@ -27,6 +27,8 @@
     font-size: 22px;
     border: 1.5px solid #d73351;
     margin: 0.8em;
+    padding-left: 1em;
+    padding-right:  1em;
 }
 
 .navbar-collapse {
@@ -768,6 +770,8 @@
     .carousel-control-next-icon {
         content: "";
         background-image: url("../media/fleche-droite.png");
+        /* background-size: 200%; */
+        /* margin-bottom:  25px; */
     }
     .carousel-indicators li {
         cursor: pointer;
